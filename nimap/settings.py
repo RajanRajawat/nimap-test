@@ -76,10 +76,10 @@ WSGI_APPLICATION = 'nimap.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'railway',
+        'NAME': 'mydb',
         'USER': 'postgres',
-        'PASSWORD': 'keqoFEoBqEeRXDUBOgkCsODIbsYxrlZL',
-        'HOST': 'postgres.railway.internal',
+        'PASSWORD': '48296',
+        'HOST': 'localhost',
         'PORT': '5432',
     }
 }
