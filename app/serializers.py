@@ -5,6 +5,7 @@ from django.contrib.auth.models import User
 
 class ClientSerializer(serializers.ModelSerializer):
     created_by = serializers.CharField(source="created_by.username")
+    #need to add projects and updated tom morning
     class Meta:
         model = Client
         fields=['id', 'client_name', 'created_at', 'created_by', ]
@@ -30,5 +31,13 @@ class ClientProjectSerializer(serializers.ModelSerializer):
     class Meta:
         model = Client
         fields=['id', 'client_name', 'created_at', 'created_by', ]
+        read_only_fields = ["created_by"]
+
+class ClientListSerializer(serializers.ModelSerializer):
+    created_by = serializers.CharField(source="created_by.username")
+    class Meta:
+        model = Client
+        fields = ['id', 'client_name', 'created_at', 'created_by',]
+
         
         
