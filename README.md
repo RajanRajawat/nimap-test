@@ -1,4 +1,3 @@
-Make the following text in readme file,
 
 Database Configuration
 > Using PostgreSQL on local host
