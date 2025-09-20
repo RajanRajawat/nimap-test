@@ -20,6 +20,7 @@ class Project(models.Model):
     created_by = models.ForeignKey(User, on_delete=models.CASCADE)
     client = models.ForeignKey(Client, db_column='client', on_delete=models.CASCADE)
     users = models.ManyToManyField(User, related_name="users_project")
+    
 
     def __str__(self):
         return self.project_name
