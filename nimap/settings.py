@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'nimap.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'api',
+        'NAME': 'mydb',
         'USER': 'postgres',
         'PASSWORD': '48296',
         'HOST': 'localhost',
@@ -104,7 +104,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-LOGIN_REDIRECT_URL = '/api/'  
+LOGIN_REDIRECT_URL = 'http://127.0.0.1:8000/api/projects'  
 LOGOUT_REDIRECT_URL = '/accounts/login/'
 
 
